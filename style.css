@@ -1,0 +1,384 @@
+/* Custom CSS Variables for D44 Exam Coaching Institute */
+:root {
+--navy: #1B365D;
+--navy-dark: #102442;
+--amber: #D97706;
+--amber-hover: #B45309;
+--bg-light: #F8FAFC;
+--text-dark: #0F172A;
+--border-color: #CBD5E1;
+}
+
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: 'Segoe UI', Arial, sans-serif;
+font-size: 16px;
+line-height: 1.6;
+background-color: var(--bg-light);
+color: var(--text-dark);
+}
+
+h1, h2, h3, .brand-logo {
+font-family: Georgia, 'Times New Roman', serif;
+color: var(--navy);
+}
+
+.container {
+width: 92%;
+max-width: 1120px;
+margin: 0 auto;
+}
+
+/* Sticky Navigation Bar using Flexbox */
+.site-header {
+background-color: #FFFFFF;
+border-bottom: 2px solid var(--navy);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.nav-wrapper {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 14px 0;
+gap: 16px;
+}
+
+.brand-logo {
+font-size: 1.25rem;
+font-weight: bold;
+text-decoration: none;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: var(--text-dark);
+font-weight: 600;
+padding: 6px 10px;
+transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+color: var(--amber);
+}
+
+.nav-links a.nav-cta {
+background-color: var(--amber);
+color: #FFFFFF;
+border-radius: 5px;
+}
+
+.nav-links a.nav-cta:hover {
+background-color: var(--amber-hover);
+color: #FFFFFF;
+}
+
+/* Hero Section using CSS Grid */
+.hero {
+padding: 48px 0;
+background-color: #EEF2F6;
+border-bottom: 1px solid var(--border-color);
+}
+
+.hero-grid {
+display: grid;
+grid-template-columns: 1.4fr 1fr;
+align-items: center;
+gap: 32px;
+}
+
+.tagline {
+color: var(--amber-hover);
+font-weight: bold;
+margin-bottom: 8px;
+}
+
+.hero-text h1 {
+font-size: 2rem;
+line-height: 1.25;
+margin-bottom: 14px;
+}
+
+.hero-buttons {
+display: flex;
+gap: 12px;
+margin-top: 20px;
+flex-wrap: wrap;
+}
+
+.hero-graphic {
+text-align: center;
+}
+
+/* Buttons with Smooth CSS Transition */
+.btn {
+display: inline-block;
+padding: 12px 20px;
+border-radius: 6px;
+text-decoration: none;
+font-weight: 600;
+border: none;
+cursor: pointer;
+font-size: 1rem;
+transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+background-color: var(--navy);
+color: #FFFFFF;
+}
+
+.btn-primary:hover {
+background-color: var(--navy-dark);
+transform: translateY(-2px);
+}
+
+.btn-secondary {
+background-color: #FFFFFF;
+color: var(--navy);
+border: 2px solid var(--navy);
+}
+
+.btn-secondary:hover {
+background-color: var(--navy);
+color: #FFFFFF;
+}
+
+.btn-full {
+width: 100%;
+margin-top: 10px;
+}
+
+/* Content Sections & Batch Table */
+.section-block {
+padding: 44px 0;
+}
+
+.bg-white {
+background-color: #FFFFFF;
+}
+
+.section-intro {
+margin: 8px 0 20px 0;
+color: #334155;
+}
+
+.table-container {
+overflow-x: auto;
+}
+
+.batch-table {
+width: 100%;
+border-collapse: collapse;
+background-color: #FFFFFF;
+}
+
+.batch-table th,
+.batch-table td {
+border: 1px solid var(--border-color);
+padding: 12px 14px;
+text-align: left;
+}
+
+.batch-table th {
+background-color: var(--navy);
+color: #FFFFFF;
+}
+
+.batch-table tbody tr:nth-child(even) {
+background-color: #F1F5F9;
+}
+
+/* Two-Column CSS Grids for Enquiry & Courses */
+.two-col-grid,
+.course-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 24px;
+}
+
+.panel,
+.course-card {
+background-color: #FFFFFF;
+border: 1px solid var(--border-color);
+border-radius: 8px;
+padding: 22px;
+}
+
+.course-card h2 {
+font-size: 1.25rem;
+margin-bottom: 10px;
+}
+
+.course-card p {
+margin-bottom: 10px;
+}
+
+.map-section {
+margin-top: 28px;
+}
+
+.map-section iframe {
+border: 1px solid var(--border-color);
+margin-top: 12px;
+}
+
+/* Form & Fee Estimator Styling */
+.form-group {
+margin-bottom: 14px;
+}
+
+.form-group label {
+display: block;
+font-weight: 600;
+margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+width: 100%;
+padding: 10px 12px;
+border: 1px solid #94A3B8;
+border-radius: 5px;
+font-size: 1rem;
+}
+
+.checkbox-group {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.checkbox-group input {
+width: 18px;
+height: 18px;
+}
+
+.checkbox-group label {
+margin-bottom: 0;
+}
+
+.fee-summary-box {
+background-color: #FEF3C7;
+border: 1px solid #F59E0B;
+padding: 12px;
+border-radius: 5px;
+font-size: 1.05rem;
+margin-bottom: 12px;
+}
+
+.feedback-msg {
+font-weight: 600;
+margin-bottom: 8px;
+}
+
+.feedback-error {
+color: #B91C1C;
+}
+
+.feedback-success {
+color: #15803D;
+}
+
+/* Saved Enquiries List */
+.panel-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 8px;
+}
+
+.btn-clear {
+background-color: #DC2626;
+color: #FFFFFF;
+border: none;
+padding: 6px 12px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.saved-list {
+list-style: none;
+margin-top: 14px;
+}
+
+.saved-list li {
+border: 1px solid var(--border-color);
+border-radius: 6px;
+padding: 12px;
+margin-bottom: 10px;
+background-color: #F8FAFC;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+}
+
+.btn-delete {
+background-color: #475569;
+color: #FFFFFF;
+border: none;
+padding: 6px 10px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* Footer using Flexbox */
+.site-footer {
+background-color: var(--navy);
+color: #FFFFFF;
+padding: 20px 0;
+}
+
+.footer-flex {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+/* Media Query 1: Tablet View (max-width: 900px) */
+@media (max-width: 900px) {
+.hero-grid,
+.two-col-grid,
+.course-grid {
+grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+flex-direction: column;
+align-items: flex-start;
+}
+}
+
+/* Media Query 2: Mobile View (max-width: 576px) */
+@media (max-width: 576px) {
+.nav-links {
+flex-wrap: wrap;
+gap: 8px;
+}
+
+.hero-text h1 {
+font-size: 1.55rem;
+}
+
+.btn {
+width: 100%;
+text-align: center;
+}
+}
