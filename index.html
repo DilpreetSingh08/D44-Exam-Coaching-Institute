@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D44 Exam Coaching Institute | Batches, Fees &amp; Admission Enquiry</title>
+  <meta name="description" content="Explore JEE, NEET, CUET, and SSC coaching batches, transparent fee structures, and instant fee estimation at D44 Exam Coaching Institute.">
+  <meta name="keywords" content="D44 Exam Coaching Institute, exam coaching batches and fees, JEE NEET CUET coaching">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sticky Header with Simple, Clear 4-Link Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">D44 Exam Coaching Institute</a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="courses.html">Courses &amp; Batches</a></li>
+          <li><a href="#fee-table">Fee Structure</a></li>
+          <li><a href="#enquiry-section" class="nav-cta">Enquire Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section using Custom CSS Grid -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="tagline">Admissions Open for 2026–27 Batches</p>
+          <h1>Structured Exam Preparation with Transparent Batches &amp; Fees</h1>
+          <p>No hidden charges or confusing menus. Compare batch timings, check exact course fees, and calculate your total admission fee in seconds.</p>
+          <div class="hero-buttons">
+            <a href="#fee-table" class="btn btn-primary">View Batches &amp; Fees</a>
+            <a href="courses.html" class="btn btn-secondary">Detailed Syllabus</a>
+          </div>
+        </div>
+
+        <!-- Inline SVG Graphic -->
+        <div class="hero-graphic">
+          <svg width="280" height="210" viewBox="0 0 280 210" role="img" aria-label="D44 Exam Coaching Institute graduation cap and achievement badge illustration">
+            <rect x="10" y="10" width="260" height="190" rx="12" fill="#E2E8F0"/>
+            <polygon points="140,42 225,80 140,118 55,80" fill="#1B365D"/>
+            <rect x="95" y="108" width="90" height="28" rx="4" fill="#1B365D"/>
+            <line x1="215" y1="84" x2="215" y2="132" stroke="#D97706" stroke-width="5"/>
+            <circle cx="215" cy="136" r="7" fill="#D97706"/>
+            <text x="140" y="172" text-anchor="middle" font-size="16" font-weight="bold" fill="#1B365D">D44 COACHING</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Batch Schedule and Fee Table -->
+    <section id="fee-table" class="section-block bg-white">
+      <div class="container">
+        <h2>2026–27 Upcoming Batches &amp; Transparent Fee Structure</h2>
+        <p class="section-intro">All batch timings, durations, and tuition fees are listed upfront for quick comparison.</p>
+
+        <div class="table-container">
+          <table class="batch-table">
+            <thead>
+              <tr>
+                <th scope="col">Course Name</th>
+                <th scope="col">Batch Name &amp; Timing</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Tuition Fee (INR)</th>
+                <th scope="col">Availability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>JEE Main &amp; Advanced Target</strong></td>
+                <td>Morning Sankalp (8:00 AM – 12:00 PM)</td>
+                <td>12 Months</td>
+                <td>₹48,000</td>
+                <td>12 Seats Left</td>
+              </tr>
+              <tr>
+                <td><strong>NEET-UG Medical Achiever</strong></td>
+                <td>Day Lakshya (10:00 AM – 2:00 PM)</td>
+                <td>12 Months</td>
+                <td>₹45,000</td>
+                <td>9 Seats Left</td>
+              </tr>
+              <tr>
+                <td><strong>CUET-UG Comprehensive</strong></td>
+                <td>Evening Udaan (4:00 PM – 6:30 PM)</td>
+                <td>6 Months</td>
+                <td>₹22,000</td>
+                <td>18 Seats Left</td>
+              </tr>
+              <tr>
+                <td><strong>SSC CGL &amp; Banking Foundation</strong></td>
+                <td>Weekend Pragati (Sat–Sun, 9:00 AM – 1:00 PM)</td>
+                <td>6 Months</td>
+                <td>₹18,000</td>
+                <td>15 Seats Left</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fee Estimator Form (6 Input Types) & Local Storage Enquiry List -->
+    <section id="enquiry-section" class="section-block">
+      <div class="container two-col-grid">
+        <div class="panel">
+          <h2>Fee Estimator &amp; Admission Enquiry</h2>
+          <form id="enquiryForm" novalidate>
+            <!-- Input Type 1: Text -->
+            <div class="form-group">
+              <label for="studentName">Student Full Name *</label>
+              <input type="text" id="studentName" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Input Type 2: Tel -->
+            <div class="form-group">
+              <label for="studentPhone">Mobile Number (10 digits) *</label>
+              <input type="tel" id="studentPhone" placeholder="e.g., 9876543210" required>
+            </div>
+
+            <!-- Input Type 3: Email -->
+            <div class="form-group">
+              <label for="studentEmail">Email Address *</label>
+              <input type="email" id="studentEmail" placeholder="student@example.com" required>
+            </div>
+
+            <!-- Input Type 4: Date -->
+            <div class="form-group">
+              <label for="startDate">Preferred Joining Date *</label>
+              <input type="date" id="startDate" required>
+            </div>
+
+            <!-- Input Type 5: Select Dropdown -->
+            <div class="form-group">
+              <label for="courseSelect">Select Target Course &amp; Batch *</label>
+              <select id="courseSelect" required>
+                <option value="" data-fee="0">-- Choose a Course Batch --</option>
+                <option value="JEE Main &amp; Advanced (Morning)" data-fee="48000">JEE Main &amp; Advanced – ₹48,000</option>
+                <option value="NEET-UG Medical (Day)" data-fee="45000">NEET-UG Medical – ₹45,000</option>
+                <option value="CUET-UG Comprehensive (Evening)" data-fee="22000">CUET-UG Comprehensive – ₹22,000</option>
+                <option value="SSC CGL Foundation (Weekend)" data-fee="18000">SSC CGL Foundation – ₹18,000</option>
+              </select>
+            </div>
+
+            <!-- Input Type 6: Checkbox -->
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="studyKit">
+              <label for="studyKit">Add Printed Study Material &amp; Test Series (+₹3,500)</label>
+            </div>
+
+            <!-- Live Fee Estimator Result -->
+            <div class="fee-summary-box" aria-live="polite">
+              Estimated Total Fee: <strong id="estimatedFee">₹0</strong>
+            </div>
+
+            <!-- Inline Validation Feedback Banner -->
+            <div id="formMessage" class="feedback-msg" role="alert"></div>
+
+            <button type="submit" class="btn btn-primary btn-full">Save &amp; Submit Enquiry</button>
+          </form>
+        </div>
+
+        <!-- Saved Enquiries Panel (Populated from Local Storage) -->
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Saved Batch Enquiries</h2>
+            <button type="button" id="clearAllBtn" class="btn-clear">Clear All</button>
+          </div>
+          <p class="small-note">Your shortlisted courses and estimated fees are saved in your browser for easy comparison.</p>
+          <ul id="enquiryList" class="saved-list"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p><strong>D44 Exam Coaching Institute</strong> | Sector 15 Market, Faridabad</p>
+      <p>Mon–Sat: 7:00 AM – 8:00 PM | Admission Desk: +91-98110-44044</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
